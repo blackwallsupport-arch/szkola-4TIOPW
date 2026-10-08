@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Hurtownia bombek</title></head>
+<body>
+<!-- PRZYKLAD 45.5 - hurtownia bombek SantaClaus, select zestawow, rabat 20% gdy zgoda -->
+<section id="lewy"><table>
+<tr><td colspan="3">ZESTAW Nr 1</td></tr>
+<tr class="bombki"><td><img src="b1.png" class="obrazek"></td><td><img src="b2.png" class="obrazek"></td><td><img src="b3.png" class="obrazek"></td></tr>
+</table></section>
+<section id="prawy">
+<form><p>Numer zestawu: <select id="zestaw">
+<option value="z1">Zestaw Nr 1 (12,50 zl)</option>
+<option value="z2">Zestaw Nr 2 (17,50 zl)</option>
+<option value="z3">Zestaw Nr 3 (15,50 zl)</option>
+</select></p>
+<p>Ile pudelek <input type="number" id="ilosc"></p>
+<p><input type="checkbox" id="tak">Jestem stalym klientem</p>
+<p><input type="button" value="Przelicz" onMouseover="oblicz()"></p>
+</form>
+</section>
+<section id="dprawy"></section>
+<script>
+function oblicz()
+{
+  var zestaw = document.getElementById("zestaw").value;
+  var ilosc = Number(document.getElementById("ilosc").value);
+  var zgoda = document.getElementById("tak").checked;
+  if (zgoda == false)
+  {
+    if (zestaw == "z1") { var koszt = ilosc * 12.5;
+      document.getElementById("wynik").innerHTML = "Dokonal sieci na zestaw Nr 1.<br>Ilosc pudelek: " + ilosc + ".<br>Koszt wynosi: " + koszt + " zl"; }
+    if (zestaw == "z2") { var koszt = ilosc * 17.5;
+      document.getElementById("wynik").innerHTML = "Dokonal sieci na zestaw Nr 2.<br>Ilosc pudelek: " + ilosc + ".<br>Koszt wynosi: " + koszt + " zl"; }
+    if (zestaw == "z3") { var koszt = ilosc * 15.5;
+      document.getElementById("wynik").innerHTML = "Dokonal sieci na zestaw Nr 3.<br>Ilosc pudelek: " + ilosc + ".<br>Koszt wynosi: " + koszt + " zl"; }
+  }
+  else {
+    if (zestaw == "z1") { var koszt = (ilosc * 12.5) * 0.8;
+      document.getElementById("wynik").innerHTML = "Koszt zestaw Nr 1.<br>Ilosc: " + ilosc + ".<br>Koszt wynosi: " + koszt + " zl"; }
+    if (zestaw == "z2") { var koszt = (ilosc * 17.5) * 0.8;
+      document.getElementById("wynik").innerHTML = "Koszt zestaw Nr 2.<br>Ilosc: " + ilosc + ".<br>Koszt wynosi: " + koszt + " zl"; }
+    if (zestaw == "z3") { var koszt = (ilosc * 15.5) * 0.8;
+      document.getElementById("wynik").innerHTML = "Koszt zestaw Nr 3.<br>Ilosc: " + ilosc + ".<br>Koszt wynosi: " + koszt + " zl"; }
+  }
+}
+</script>
+<div id="wynik"></div>
+</body></html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Array concat sort reverse</title></head>
+<body>
+<script>
+// PRZYKLAD 43.8 - ARRAY: concat (laczenie), sort (sortowanie), reverse (odwracanie)
+var tab1 = new Array(5, 78, 56);
+var tab2 = new Array(-15, 5, 123, 45);
+var tab3 = tab1.concat(tab2);
+var dl = tab3.length; // rozmiar tablicy nr 3
+document.write("<br><b>Po polaczeniu tabl z tab2:</u><br>");
+for (var i = 0; i < dl; i++) { document.write(tab3[i] + "\t"); } // znak \t wstawia tabulator
+tab3.sort(); // po posortowaniu (alfabetycznie/domyslnie)
+document.write("<br><b>Po posortowaniu:</u><br>");
+for (var i = 0; i < dl; i++) { document.write(tab3[i] + "\t"); }
+tab3.reverse(); // odwroceniu kolejnosci
+document.write("<br><b>Po odwroceniu kolejnosci:</u><br>");
+for (var i = 0; i < dl; i++) { document.write(tab3[i] + "\t"); }
+</script>
+<!-- Efekt z ksiazki: Po polaczeniu 5 78 56 -15 5 123 45 / Po posortowaniu -15 ... / Po odwroceniu ... -->
+</body></html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Zdarzenia w JS</title>
+<script>
+function koloruj(x)
+{
+  if (x == 1)
+    document.fgColor = "blue";
+  if (x == 2)
+    document.fgColor = "red";
+}
+</script>
+</head>
+<body>
+<!-- PRZYKLAD 44.2 - onMouseOver / onMouseOut: niebieski gdy najedziesz, czerwony gdy opusci -->
+<h1 onmouseover="koloruj(1)" onmouseout="koloruj(2)">PRZYKLADOWY TEKST</h1>
+</body>
+</html>

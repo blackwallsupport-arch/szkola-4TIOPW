@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>zadaniel</title>
+<style>
+#formularz{ margin:auto; width:330px; height:140px; background-color:#66ccff; padding-left:20px; padding-top:20px; }
+#wynik{ margin:auto; width:350px; height:100px; background-color:#cc66ff; padding-top:20px; text-align:center; }
+</style>
+<script>
+// PRZYKLAD 45.4 - hotel: dorosly 35 zl/dobe, dziecko 25 zl/dobe * liczba dni
+function przelicz()
+{
+  var dor = document.getElementById("d1").value;
+  var dz = document.getElementById("d2").value;
+  var dni = document.getElementById("d3").value;
+  if (!isNaN(dor) && !isNaN(dz) && !isNaN(dni) && dor != "" && dz != "" && dni != "")
+  {
+    var koszt = (dor * 35 + dz * 25) * dni;
+    document.getElementById("wynik").innerHTML = "Dokonal sieci rezerwacji na " + dni + " dni <br> dla " + dor + " doroslych i " + dz + " dzieci.<br>Koszt calkowity noclegow wynosi " + koszt + " zl.";
+  }
+}
+</script>
+</head>
+<body>
+<div id="formularz">
+<form method="post"><table>
+<tr><td>Podaj liczbe doroslych:</td><td><input type="text" id="d1"></td></tr>
+<tr><td>Podaj liczbe dzieci:</td><td><input type="text" id="d2"></td></tr>
+<tr><td>Podaj liczbe dni:</td><td><input type="text" id="d3"></td></tr>
+<tr><td colspan="2" align="right"><input type="button" id="przycisk" onclick="przelicz()" value="Oblicz"></td></tr>
+</table></form>
+</div>
+<div id="wynik"></div>
+</body></html>

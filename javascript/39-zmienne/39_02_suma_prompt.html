@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Definiowanie zmiennych</title></head>
+<body>
+<script>
+// PRZYKLAD 39.2 - + laczy tekst + wartosc, prompt zwraca string -> Number()
+var x = 5;      // definicja zmiennej x
+var y = 7;      // definicja zmiennej y
+var k;          // deklaracja zmiennej k
+k = x + y;      // instrukcja przypisania
+alert("wartosc k wynosi " + k);
+
+// Wczytywanie liczb: prompt + Number (inaczej "4"+"5" = "45" a nie 9)
+var a = prompt("Podaj x:");
+var b = prompt("Podaj y:");
+var suma = x + y;
+document.write("Suma liczb " + x + " oraz " + y + " wynosi " + suma);
+</script>
+<script>
+// Poprawne sumowanie wpisanych liczb:
+var xx = Number(prompt("Podaj x:"));
+var yy = Number(prompt("Podaj y:"));
+var s = xx + yy;
+document.write("<br>Suma liczb " + xx + " oraz " + yy + " wynosi " + s);
+</script>
+</body>
+</html>

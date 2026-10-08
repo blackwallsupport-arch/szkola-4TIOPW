@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przykład - Strona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Moja pierwsza strona</h1>
+        <nav>
+            <ul>
+                <li><a href="#start">Start</a></li>
+                <li><a href="#o-mnie">O mnie</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="start">
+            <h2>Witaj na mojej stronie!</h2>
+            <p>To jest moja pierwsza strona internetowa.</p>
+            <p>Uczę się HTML i CSS.</p>
+        </section>
+
+        <section id="o-mnie">
+            <h2>O mnie</h2>
+            <p>Nazywam się Jan i uczę się programowania.</p>
+            
+            <h3>Moje zainteresowania:</h3>
+            <ul>
+                <li>Programowanie</li>
+                <li>Gry komputerowe</li>
+                <li>Muzyka</li>
+            </ul>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <form>
+                <label for="imie">Imię:</label>
+                <input type="text" id="imie" name="imie" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="wiadomosc">Wiadomość:</label>
+                <textarea id="wiadomosc" name="wiadomosc" required></textarea>
+                
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Moja strona</p>
+    </footer>
+</body>
+</html>

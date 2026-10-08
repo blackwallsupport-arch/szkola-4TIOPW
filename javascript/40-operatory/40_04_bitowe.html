@@ -1,0 +1,16 @@
+<script>
+// PRZYKLAD 40.4 - operatory bitowe: & ^ | << >>
+// Dzialaja na 32-bitowej reprezentacji binarnej
+var x = 8;  // 1000
+var y = 15; // 1111
+document.write("Liczba " + x + " = " + (x).toString(2) + "<br>"); // pokaz binarnie pomocniczo
+document.write("Liczba " + x + "+" + y + "= " + (x & y) + ", czyli 1000<br>"); // 8 & 15 = 8
+document.write("8 & 15 = 8, czyli 1000<br>");
+document.write("8 ^ 15 = 7, czyli 0111<br>");
+document.write("8 | 15 = 15, czyli 1111<br>");
+document.write("8 << 2 = 32, czyli 100000<br>");
+document.write("x&y = " + (x & y) + "<br>");
+document.write("x^y = " + (x ^ y) + "<br>");
+document.write("x|y = " + (x | y) + "<br>");
+document.write("x<<2 = " + (x << 2) + "<br>");
+</script>
