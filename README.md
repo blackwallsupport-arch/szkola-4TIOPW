@@ -46,12 +46,24 @@ Masz link? To po prostu go otworz: `https://github.com/blackwallsupport-arch/szk
 | [`44-zdarzenia/`](javascript/44-zdarzenia) | onload, mouseover | 3 |
 | [`45-formularze/`](javascript/45-formularze) | formularze, walidacja, kalkulator, hotel, bombki | 5 |
 
+## PHP (`php/` - rozdzialy 46-53, szczegoly w [`README`](php/README.md))
+
+| Dzial | Temat | Pliki |
+|---|---|---|
+| [`46-struktura/`](php/46-struktura) | pierwszy skrypt, komentarze | 2 |
+| [`47-zmienne/`](php/47-zmienne) | typy, tablice, operatory | 13 |
+| [`48-instrukcje/`](php/48-instrukcje) | if, switch, for, while, foreach | 9 |
+| [`49-funkcje/`](php/49-funkcje) | funkcje, daty, referencje, sortowanie | 17 |
+| [`50-formularze/`](php/50-formularze) | formularze, walidacja | 6 |
+| [`51-bazy/`](php/51-bazy) | mysqli + PDO, CRUD | 8 |
+| [`52-cookies-sesje/`](php/52-cookies-sesje) | cookies, sesje, logowanie | 7 |
+| [`53-pliki/`](php/53-pliki) | fopen, fwrite, fread, feof | 4 |
+
 ## W drodze
 
 | Folder | Status |
 |---|---|
 | [`java/`](java) | kod w drodze, teoria w `dokumentacja/04-java/` |
-| [`php/`](php) | rozdzialy 46-53: struktura, zmienne, instrukcje, funkcje, formularze, bazy, cookies/sesje, pliki |
 | [`sql/`](sql) | skrypty w drodze |
 
 ## Docs i inne
