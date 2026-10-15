@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#0d1117"/>
+<stop offset="0.55" stop-color="#161b22"/>
+<stop offset="1" stop-color="#1f6feb"/>
+</linearGradient>
+</defs>
+<rect width="1200" height="300" fill="url(#g)" rx="16"/>
+<circle cx="1050" cy="60" r="120" fill="#1f6feb" opacity="0.25"/>
+<circle cx="120" cy="260" r="140" fill="#58a6ff" opacity="0.15"/>
+<text x="70" y="130" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="bold" fill="#ffffff">szkola-4TIOPW</text>
+<text x="70" y="180" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#8b949e">C++ &#8226; JavaScript &#8226; Java &#8226; PHP &#8226; SQL &#8226; HTML/CSS</text>
+</svg>
