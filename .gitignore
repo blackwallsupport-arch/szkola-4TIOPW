@@ -1,0 +1,17 @@
+# Build output
+*.exe
+*.o
+*.obj
+*.out
+*.pdb
+*.ilk
+build/
+
+# Local editor settings
+.vscode/
+.vs/
+.history/
+
+# OS files
+Thumbs.db
+Desktop.ini
