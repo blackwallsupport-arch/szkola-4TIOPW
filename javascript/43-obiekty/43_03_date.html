@@ -1,0 +1,11 @@
+<script>
+// PRZYKLAD 43.3 - obiekt DATE: new Date(), getDate, getMonth, getDay...
+var napis = "Uczymy sie pisac skrypty.";
+data = new Date();
+document.write("Dzisaj jest: " + data + "<br>");
+document.write("Czas w GMT: " + data.toGMTString() + "<br>");
+document.write("Czas lokalny: " + data.toLocaleString() + "<br>");
+document.write("Miesiac: " + (data.getMonth() + 1) + "<br>");
+document.write("Dzien miesiaca: " + data.getDate() + "<br>");
+document.write("Dzien tygodnia: " + data.getDay() + "<br>");
+</script>

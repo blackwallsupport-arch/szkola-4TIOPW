@@ -1,0 +1,31 @@
+<script>
+// PRZYKLAD 42.3 - kalkulator: 4 funkcje + switch (+,-,*,/), dzielenie przez 0 chronione
+function suma(a, b) { return a + b; }
+function odejmij(a, b) { return a - b; }
+function iloczyn(a, b) { return a * b; }
+function iloraz(a, b) { return a / b; }
+
+var a = Number(prompt("Podaj liczbe a: "));
+var b = Number(prompt("Podaj liczbe b: "));
+var znak = prompt("Wybierz dzialanie (+,-,*,/): ");
+switch (znak) {
+  case '+':
+    alert("Suma liczb " + a + " oraz " + b + " wynosi " + suma(a, b));
+    break;
+  case '-':
+    alert("Roznica liczb " + a + " oraz " + b + " wynosi " + odejmij(a, b));
+    break;
+  case '*':
+    alert("Iloczyn liczb " + a + " oraz " + b + " wynosi " + iloczyn(a, b));
+    break;
+  case '/':
+    if (b != 0)
+      alert("Iloraz liczb " + a + " oraz " + b + " wynosi " + iloraz(a, b));
+    else
+      alert("Nie wykonano dzielenia, bo b=0");
+    break;
+  default:
+    alert("Zle wybrates dzialanie!");
+    break;
+}
+</script>

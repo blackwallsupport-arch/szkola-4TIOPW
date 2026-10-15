@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Tworzenie skryptow w JS</title>
+<script>
+function podaj_imie()
+{
+  var imie = prompt("Jak masz na imie? ");
+  if (imie == null || imie == "")
+    document.write("Milo, ze jestes z nami!");
+  else
+    document.write("Milo, ze jestes z nami " + imie);
+  return imie;
+}
+</script>
+</head>
+<body onload="podaj_imie()">
+<!-- PRZYKLAD 44.1 - zdarzenie onLoad po zaladowaniu strony wywoluje podaj_imie() -->
+</body>
+</html>

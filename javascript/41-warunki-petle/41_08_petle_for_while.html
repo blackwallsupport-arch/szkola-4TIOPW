@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Tworzenie tabeli petla</title>
+<style>
+table, tr, td { border: 1px solid blue; }
+table { width: 50px; text-align: center; }
+</style>
+</head>
+<body>
+<script>
+// PRZYKLAD 41.8 - petla FOR, 41.12 WHILE, 41.14 DO...WHILE z ksiazki
+// FOR: powtarzanie okreslona liczbe razy
+for (var i = 1; i <= 5; i++)
+{
+  document.write("Oto moj skrypt!<br>");
+}
+</script>
+<script>
+// WHILE: gdy nie znamy liczby powtorzen z gory
+var j = 1;
+document.write("<table>");
+while (j <= 10) {
+  var a = parseInt(Math.random() * 100 + 1);
+  document.write("<tr><td>" + a + "</td></tr>");
+  j++;
+}
+document.write("</table>");
+</script>
+<script>
+// DO...WHILE: wykona sie min. 1 raz
+var k = 1, s = 0;
+do {
+  s += k;
+  k++;
+} while (k <= 5);
+document.write("Suma 1..5 = " + s);
+</script>
+</body>
+</html>

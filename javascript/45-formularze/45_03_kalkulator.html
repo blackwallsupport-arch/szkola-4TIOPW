@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Zadanie3</title>
+<style>
+#wynik{ background-color:#000066; width:100px; text-align:center; color:white; }
+</style>
+<script>
+// PRZYKLAD 45.3 - kalkulator getElementById, select z dzialaniem
+function oblicz()
+{
+  var x = Number(document.getElementById("liczba1").value);
+  var y = Number(document.getElementById("liczba2").value);
+  var z = document.getElementById("wyb").value;
+  if (z == "d1") document.getElementById("wynik").innerHTML = x + y;
+  if (z == "d2") document.getElementById("wynik").innerHTML = x - y;
+  if (z == "d3") document.getElementById("wynik").innerHTML = x * y;
+  if (z == "d4") document.getElementById("wynik").innerHTML = x / y;
+}
+</script>
+</head>
+<body>
+<form><table>
+<tr><td><input type="text" id="liczba1"></td>
+<td><select id="wyb">
+<option value="d1">+</option><option value="d2">-</option>
+<option value="d3">*</option><option value="d4">/</option>
+</select></td>
+<td><input type="text" id="liczba2"></td>
+<td id="wynik"></td></tr>
+<tr><td colspan="5"><input type="button" value="Oblicz" onclick="oblicz()"></td></tr>
+</table></form>
+</body></html>

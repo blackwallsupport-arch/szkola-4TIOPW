@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Zwierzeta onclick</title></head>
+<body>
+<!-- PRZYKLAD 44.3 - klikniecie obrazka wyswietla opis (papuga/zyrafa/krokodyl/zebra/wilk) -->
+<div id="tabela">
+<table id="dane">
+<tr>
+<td><img src="papuga.png" id="papuga" onclick="papuga()" alt="papuga"></td>
+<td><img src="zyrafa.png" id="zyrafa" onclick="zyrafa()" alt="zyrafa"></td>
+<td><img src="krokodyl.png" id="krokodyl" onclick="krokodyl()" alt="krokodyl"></td>
+<td><img src="zebra.png" id="zebra" onclick="zebra()" alt="zebra"></td>
+<td><img src="wilk.png" id="wilk" onclick="wilk()" alt="wilk"></td>
+</tr>
+</table>
+</div>
+<div id="wynik"></div><div id="tresc"></div>
+<script>
+function papuga() {
+  document.getElementById("wynik").innerHTML = "PAPUGA";
+  document.getElementById("tresc").innerHTML = "Papuzko, powiedz mi cos na uszko.<br>Nic nie powiem, bos ty plotkarz, powtorzysz kazdemu, kogo spotkasz.";
+}
+function zyrafa() {
+  document.getElementById("wynik").innerHTML = "ZYRAFA";
+  document.getElementById("tresc").innerHTML = "Zyrafa tym glownie zyje, ze w gore wyciaga szyje.<br>Ja nie potrafie, zazdroszcze zyrafie,";
+}
+function krokodyl() {
+  document.getElementById("wynik").innerHTML = "KROKODYL";
+  document.getElementById("tresc").innerHTML = "Skad ty jestes, krokodylu?<br>Wypusc mnie na kilka chwil, zawioze cie nad Nil.";
+}
+function zebra() {
+  document.getElementById("wynik").innerHTML = "ZEBRA";
+  document.getElementById("tresc").innerHTML = "Czy to tak NAPRAWDE bywa?<br>Pomalowal osla w PASKI?";
+}
+function wilk() {
+  document.getElementById("wynik").innerHTML = "WILK";
+  document.getElementById("tresc").innerHTML = "Co mysle o tym wilku:<br>Zaraz by cie zjadl, gluptasku.";
+}
+</script>
+</body></html>

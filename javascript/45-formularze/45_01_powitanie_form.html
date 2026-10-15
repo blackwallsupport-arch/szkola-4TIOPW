@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Obsluga formularzy</title>
+<script>
+// PRZYKLAD 45.1 - this.wlasciwosc, powitanie(this.form)
+function powitanie(form1)
+{
+  if (form1.imie.value == "")
+    document.write("Nie podales swojego imienia.");
+  else
+    document.write("Witaj " + form1.imie.value);
+}
+</script>
+</head>
+<body>
+<form method="post" name="form1">
+Podaj swoje imie: <input type="text" name="imie">
+<br><input type="button" name="p1" value="Kliknij" onclick="powitanie(this.form)">
+</form>
+</body>
+</html>

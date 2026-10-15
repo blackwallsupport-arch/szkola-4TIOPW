@@ -1,0 +1,36 @@
+<script>
+// PRZYKLAD 42.4 - iteracja (petla FOR) vs rekurencja (funkcja wywoluje sama siebie)
+// Potega 2 do n: potega1 - iteracyjnie, potega2 - rekurencyjnie
+function potega1(x)
+{
+  var wynik = 1;
+  if (x == 0) return 1;
+  else
+  {
+    for (var i = 1; i <= x; i++)
+    {
+      wynik *= 2;
+    }
+  }
+  return wynik;
+}
+function potega2(x)
+{
+  if (x == 0) return 1;
+  else
+  {
+    var wynik = 2 * potega2(x - 1);
+    return wynik;
+  }
+}
+var n = Number(prompt("Podaj potege liczby 2: "));
+if (n > 0)
+{
+  document.write("Iteracyjnie 2 do potegi " + n + " wynosi " + (potega1(n)) + "<br>");
+  document.write("Rekurencyjnie 2 do potegi " + n + " wynosi " + (potega2(n)));
+}
+else
+{
+  alert("n nie moze byc liczba ujemna");
+}
+</script>

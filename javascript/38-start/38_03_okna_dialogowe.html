@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Okna dialogowe</title></head>
+<body>
+<script>
+// Okna dialogowe: alert (info, OK), confirm (OK/Anuluj -> true/false), prompt (wpisz tekst)
+// Rys. 38.2, 38.3, 38.4 z ksiazki
+alert("Witamy na stronie!");
+
+var decyzja = confirm("Czy chcesz otworzyc strone?");
+if (decyzja) {
+  document.write("Wybrales OK<br>");
+} else {
+  document.write("Wybrales Anuluj<br>");
+}
+
+var imie = prompt("Podaj swoje imie:", "");
+if (imie) {
+  document.write("Witaj " + imie + "!");
+}
+</script>
+</body>
+</html>

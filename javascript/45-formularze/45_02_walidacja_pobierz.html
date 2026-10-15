@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Obsluga formularzy</title>
+<script>
+// PRZYKLAD 45.2 - pobierz(): sprawdza czy pola puste, document.forms[0]
+function pobierz()
+{
+  f = document.forms[0]; // pierwszy element tablicy formularzy
+  napis = "\n";
+  braki = false;
+  if (f.imie.value == "")
+  { napis += "imie\n"; braki = true; }
+  if (f.nazw.value == "")
+  { napis += "nazwisko\n"; braki = true; }
+  if (f.data.value == "")
+  { napis += "data urodzenia\n"; braki = true; }
+  if (braki == false) alert("Wprowadziles wszystkie dane");
+  else alert("Brakuje nastepujacych danych: \n" + napis);
+}
+</script>
+</head>
+<body>
+<form method="post" name="form2">
+<table>
+<tr><td>Podaj swoje imie: </td><td><input type="text" name="imie"></td></tr>
+<tr><td>Podaj swoje nazwisko: </td><td><input type="text" name="nazw"></td></tr>
+<tr><td>Podaj rok urodzenia: </td><td><input type="data" name="data" size="4"></td></tr>
+<tr><td colspan="2" align="right"><input type="button" name="p1" value="Kliknij" onclick="pobierz()"></td></tr>
+</table>
+</form>
+</body>
+</html>
