@@ -22,6 +22,19 @@ Nie masz linku? To tak wejdz:
 
 Masz link? To po prostu go otworz: `https://github.com/blackwallsupport-arch/szkola-4TIOPW`
 
+## Wymagane programy (oficjalne linki)
+
+| Jezyk | Co instalowac | Link do producenta |
+|---|---|---|
+| **C++** | VS Code + MinGW-w64 (g++) | [VS Code](https://code.visualstudio.com/) \| [MinGW-w64](https://winlibs.com/) |
+| **JavaScript / HTML / CSS** | VS Code + przegladarka | [VS Code](https://code.visualstudio.com/) |
+| **PHP** | XAMPP (Apache + PHP + MySQL) | [XAMPP](https://www.apachefriends.org/) |
+| **Java** | JDK 17+ (Temurin) | [Eclipse Temurin](https://adoptium.net/) |
+| **SQL** | XAMPP (MySQL) lub SQLite | [XAMPP](https://www.apachefriends.org/) \| [SQLite](https://www.sqlite.org/download.html) |
+| **C#** | .NET SDK + VS Code | [.NET SDK](https://dotnet.microsoft.com/download) \| [VS Code](https://code.visualstudio.com/) |
+
+> Wszystkie linki prowadza do oficjalnych stron producentow. Pobieraj tylko stamtad.
+
 ## C++ (`cpp/`)
 
 | Rozdzial | Temat | Pliki |
