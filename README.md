@@ -111,7 +111,18 @@ g++ 36_01_zapis_do_pliku.cpp -std=c++17 -o przyklad.exe
 <details>
 <summary><b>Jak uruchomic JS</b></summary>
 
-`javascript/` -&gt; podfolder -&gt; dwuklik w `.html`. Nic nie instalujesz.
+`javascript/` -> podfolder -> dwuklik w `.html`. Nic nie instalujesz.
+
+</details>
+
+<details>
+<summary><b>Jak uruchomic PHP</b></summary>
+
+1. Zainstaluj **XAMPP** (Apache + PHP + MySQL) i uruchom Apache + MySQL w panelu.
+2. Skopiuj folder `php/` do `C:\xampp\htdocs\` (np. `C:\xampp\htdocs\php\`).
+3. W przegladarce wejdz na `http://localhost/php/46-struktura/46_01_pierwszy.php`.
+4. Pliki z bazami (`51-bazy/`) i sesjami (`52-cookies-sesje/`) wymagaja dzialajacego MySQL w XAMPP.
+5. Alternatywa bez XAMPP: w terminalu w folderze z plikiem `php -S localhost:8000` i otworz `http://localhost:8000/...`.
 
 </details>
 
